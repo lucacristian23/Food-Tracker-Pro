@@ -1,0 +1,144 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #fffdd0;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+.title {
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 12vh;
+  color: orangered;
+}
+
+.subTitle {
+  position: absolute;
+  top: 26%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 4vh;
+  color: orangered;
+}
+
+.button {
+  background: linear-gradient(to bottom right, #ef4765, #ff9a5a);
+  border: 2px solid black;
+  border-radius: 12px;
+  color: #ffffff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: -apple-system, system-ui, "Segoe UI", Roboto, Helvetica, Arial,
+    sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 2.5;
+  outline: transparent;
+  padding: 0 1rem;
+  text-align: center;
+  text-decoration: none;
+  transition: box-shadow 0.2s ease-in-out;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+}
+
+.button:not([disabled]):focus {
+  box-shadow: 0 0 0.25rem rgba(0, 0, 0, 0.5),
+    -0.125rem -0.125rem 1rem rgba(239, 71, 101, 0.5),
+    0.125rem 0.125rem 1rem rgba(255, 154, 90, 0.5);
+}
+
+.button:not([disabled]):hover {
+  box-shadow: 0 0 0.25rem rgba(0, 0, 0, 0.5),
+    -0.125rem -0.125rem 1rem rgba(239, 71, 101, 0.5),
+    0.125rem 0.125rem 1rem rgba(255, 154, 90, 0.5);
+}
+
+.buttonStart {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 50vh;
+  height: 11vh;
+  font-size: 4.5vh;
+}
+
+.buttonRecord {
+  position: absolute;
+  left: 50%;
+  top: 65%;
+  transform: translate(-50%, -50%);
+  width: 50vh;
+  height: 11vh;
+  font-size: 4.5vh;
+}
+
+.backButton {
+  position: absolute;
+  left: 5%;
+  bottom: 5%;
+  width: 30vh;
+  height: 5vh;
+  font-size: 1.5vh;
+}
+
+.custom_tableprevious {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.custom-table {
+  display: table;
+  border-collapse: collapse;
+  width: 25vh;
+  background-color: #ff9a5a;
+}
+
+.custom-table.selected {
+  background-color: rgb(44, 161, 197);
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.cell {
+  display: flexbox;
+
+  padding: 10px;
+  width: 50%; /* Each cell will take up one-third of the row's width */
+  border: 1px solid #000;
+}
+
+/* Set a fixed width for the first cell */
+.cell1 {
+  width: 100%; /* Allow the cell to expand based on content */
+  border: 1px solid #000;
+}
+
+/* Calculate height based on content */
+
+.table_container {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 10px;
+}
+
+.display {
+  display: none;
+}
